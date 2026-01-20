@@ -23,4 +23,4 @@ app.get("/movies", (req,res)=>{
 
 })
 
-app.listen(PORT, () => console.log("MAETLO CHEN"))
+app.listen(PORT, () => console.log("Servidor abierto en el puerto 3000"))

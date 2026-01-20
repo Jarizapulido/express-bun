@@ -1,4 +1,4 @@
-
+BEGIN TRANSACTION;
 INSERT INTO movies VALUES(1,'Toy Story (1995)','Adventure|Animation|Children|Comedy|Fantasy','2026-01-15 10:11:56');
 INSERT INTO movies VALUES(2,'Jumanji (1995)','Adventure|Children|Fantasy','2026-01-15 10:11:56');
 INSERT INTO movies VALUES(3,'Grumpier Old Men (1995)','Comedy|Romance','2026-01-15 10:11:56');
@@ -10329,3 +10329,4 @@ INSERT INTO movies VALUES(10327,'A Very Murray Christmas (2015)','Comedy','2026-
 INSERT INTO movies VALUES(10328,'The Big Short (2015)','Drama','2026-01-15 10:11:56');
 INSERT INTO movies VALUES(10329,'Marco Polo: One Hundred Eyes (2015)','(no genres listed)','2026-01-15 10:11:56');
 
+COMMIT;
