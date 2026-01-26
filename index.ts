@@ -34,6 +34,8 @@ app.get("/movies", (req,res) => {
 })
 
 app.post("/movies", (req, res) => {
+    //TODO Validar datos de entrada, si no llegan title y genre revienta
+    //TODO Usar un try/catch en caso de que la db falle
     const {nombre, genre} = req.body
     const respuesta = insertMovie(db, nombre, genre)
     res.send(respuesta)
