@@ -35,3 +35,8 @@ export function getMoviesByTitleAndGenre(db: Database,titulo: string,genero: str
     const query = db.query("SELECT * FROM movies WHERE nombre LIKE ? AND genre LIKE ?")
     return query.all(`%${titulo}%`, `%${genero}%`)
 }
+
+export function insertMovie(db: Database, title: string, genres: string) {
+    const query = db.query("INSERT INTO movies (nombre, genre) VAlUES (?, ?)")
+    return query.run(title, genres)
+}
