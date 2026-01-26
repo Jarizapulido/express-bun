@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 1em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.5em;
+    border: 1px solid black;
+
+}

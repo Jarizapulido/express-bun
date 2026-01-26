@@ -18,6 +18,7 @@ const logMiddleware = (req: Request, res: Response, next: NextFunction) => {
     next()
 }
 
+app.use(express.static("public"))
 app.use(logMiddleware)
 
 app.get("/movies", (req,res) => {
